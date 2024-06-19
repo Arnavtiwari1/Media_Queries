@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+}
+
+img {
+    width: 413px;
+    height: 275px;
+    display: block;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: zoom-in;
+    background-color: hsl(0, 0%, 90%);
+    transition: background-color 300ms, transform 300ms, cursor 300ms;
+}
+
+img.zoom-out {
+    cursor: zoom-out;
+    transform: scale(1.5);
+}
+
+img:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 100%;
+    }
+}
+
